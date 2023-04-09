@@ -162,6 +162,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.feautures {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container-feautures-title {
+  display: flex;
+}
+.list-feautures {
+  display: flex;
+  gap: 24px;
+}
+.four-feautures {
+  width: calc((100% - 72px) / 4);
+}
 .feauture-title,
 .card-name {
   font-family: var(--main-font);
@@ -170,6 +184,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 .feauture-review,
 .card-review {
