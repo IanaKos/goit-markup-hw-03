@@ -26,6 +26,28 @@ body {
   background-color: var(--white);
   color: #434455;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+li:last-child {
+  margin-bottom: 0;
+}
 .modal-btn {
   font-family: inherit;
   font-weight: 500;
@@ -109,6 +131,9 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero {
   background: var(--navy-blue);
@@ -121,17 +146,30 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  margin-bottom: 16px;
 }
 .logo-dark {
   color: var(--navy-blue);
 }
 .logo-light {
   color: var(--cloud);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .secondary-header {
   font-family: var(--main-font);
@@ -195,7 +233,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.button.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.card.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer {
+  padding: 100px 0;
   background: var(--navy-blue);
 }
 .footer-text {
