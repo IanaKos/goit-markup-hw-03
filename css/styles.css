@@ -36,17 +36,27 @@ p {
   margin: 0;
   padding: 0;
 }
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
+
 img {
   display: block;
 }
 li:last-child {
   margin-bottom: 0;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .modal-btn {
   font-family: inherit;
@@ -91,18 +101,32 @@ li:last-child {
   list-style: none;
   text-decoration: none;
   background-color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
 }
+.page-nav {
+  margin-right: auto;
+}
+.menu.list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 .menu-link {
+  display: block;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--ocean);
@@ -117,6 +141,8 @@ li:last-child {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -142,6 +168,7 @@ li:last-child {
 }
 
 .logo {
+  margin-right: 72px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -243,9 +270,16 @@ li:last-child {
 }
 .card.list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 50px 30px;
 }
+.card-item {
+  background: #ffffff;
+  width: calc((100% - 360px) / 3);
+
+  border: 1px solid #e7e9fc;
+}
+
 .footer {
   padding: 100px 0;
   background: var(--navy-blue);
