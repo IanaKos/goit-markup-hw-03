@@ -49,6 +49,9 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -77,6 +80,7 @@ button {
   min-width: 169px;
   padding: 16px 32px;
   margin: 0 auto;
+  border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -97,11 +101,13 @@ button {
   background: var(--cloud);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .card-modal-btn:hover,
 .card-modal-btn:focus {
   background: #404bbf;
   color: var(--white);
+  border: 1px solid transparent;
 }
 .list {
   list-style: none;
@@ -116,6 +122,7 @@ button {
 .page-nav {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 .section {
   padding-top: 120px;
@@ -127,7 +134,7 @@ nav {
 .menu-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 .menu-link {
   display: inline-block;
@@ -164,6 +171,7 @@ nav {
 }
 .contacts-list {
   display: flex;
+  gap: 40px;
 }
 .contact-item {
   margin-left: 40px;
@@ -179,11 +187,13 @@ nav {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 .hero {
   background: var(--navy-blue);
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 188px 0;
 }
 
 .logo {
@@ -198,6 +208,7 @@ nav {
   text-transform: uppercase;
   color: var(--iris);
   margin-bottom: 16px;
+  margin-right: 76px;
 }
 .logo-dark {
   color: var(--navy-blue);
@@ -226,6 +237,7 @@ nav {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 .team {
   background: var(--cloud);
@@ -244,6 +256,8 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-position {
@@ -253,6 +267,14 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  text-align: center;
+}
+.team-item {
+  width: calc((100% - 72px) / 4);
+}
+.team-descr {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 .feautures {
   padding-top: 120px;
@@ -295,6 +317,7 @@ nav {
 }
 .three-services {
   width: calc((100% - 48px) / 3);
+  gap: 24px;
 }
 .button.list {
   display: flex;
@@ -303,6 +326,10 @@ nav {
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
+  margin-bottom: 72px;
+}
+.cards-section {
+  padding: 96px 0 120px;
 }
 .card.list {
   display: flex;
