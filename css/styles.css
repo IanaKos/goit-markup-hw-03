@@ -39,6 +39,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 li:last-child {
   margin-bottom: 0;
@@ -63,7 +65,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  display: block;
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -71,6 +73,10 @@ button {
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  height: 56px;
+  min-width: 169px;
+  padding: 16px 32px;
+  margin: 0 auto;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -108,23 +114,31 @@ button {
   text-decoration: none;
 }
 .page-nav {
+  display: flex;
   margin-right: auto;
 }
-.menu.list {
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+nav {
+  display: flex;
+}
+.menu-nav {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 .menu-link {
-  display: block;
+  display: inline-block;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -148,7 +162,12 @@ button {
 .contacts-link:focus {
   color: #404bbf;
 }
-
+.contacts-list {
+  display: flex;
+}
+.contact-item {
+  margin-left: 40px;
+}
 .hero-section-header {
   font-family: var(--main-font);
   font-weight: 700;
@@ -211,6 +230,13 @@ button {
 .team {
   background: var(--cloud);
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100%-24px) / 3);
+  gap: 24px;
+}
 .team-title {
   font-family: var(--main-font);
   font-weight: 500;
@@ -219,6 +245,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
+
 .team-position {
   font-family: var(--main-font);
   font-weight: 400;
@@ -260,6 +287,15 @@ button {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.three-services {
+  width: calc((100% - 48px) / 3);
+}
 .button.list {
   display: flex;
   flex-direction: row;
@@ -271,13 +307,17 @@ button {
 .card.list {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 30px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .card-item {
   background: #ffffff;
-  width: calc((100% - 360px) / 3);
-
+  width: calc((100% - 48px) / 3);
+}
+.card-main-icon {
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .footer {
@@ -291,4 +331,5 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+  width: 264px;
 }
