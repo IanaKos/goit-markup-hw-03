@@ -194,7 +194,6 @@ nav {
 }
 
 .logo {
-  margin-right: 72px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -204,6 +203,7 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  margin-right: 76px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -249,7 +249,9 @@ nav {
 .team {
   background: var(--cloud);
 }
-
+.team-section {
+  padding: 120px 0 120px;
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
