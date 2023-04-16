@@ -125,7 +125,6 @@ button {
   align-items: center;
 }
 .section {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 nav {
@@ -173,9 +172,7 @@ nav {
   display: flex;
   gap: 40px;
 }
-.contact-item {
-  margin-left: 40px;
-}
+
 .hero-section-header {
   font-family: var(--main-font);
   font-weight: 700;
@@ -207,8 +204,18 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
   margin-bottom: 16px;
-  margin-right: 76px;
 }
 .logo-dark {
   color: var(--navy-blue);
